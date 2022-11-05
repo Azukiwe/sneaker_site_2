@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneaker Store</title>
+    <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="scripts.js">
+    <script
+      src="https://kit.fontawesome.com/3b989edefd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  </head>
+
+  <body> 
+   
+    <div id="fullpage">
+      <!--NAVIGATION-->
+
+      <!--ICONS-->
+      <section class="icons">
+        <a href="#"><i class="fa fa-brand fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-brand fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-brand fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-brand fa-instagram"></i></a>
+      </section>
+      
+      <div class="section">
+        <!-- Add classes where necessary and style the section appropriately -->
+        <div id="homePage" class="content">
+          <div class="home-details">
+            <h1 class="home-heading">Premium
+                <span>Air Force Sneaker</span></h1>
+            <p>
+              Classic, iconic look and craftmanship. Explore the latest <br />
+              designs and releases in the Nike Air Force Sneaker. <br />
+              Order your Nike Air footwear or visit our Shop.
+             </p>
+            <a href="#products" class="btn">Shop Now</a>
+          </div>
+          <div id="us">
+          <img src="/nike 2.jpg" alt="sneaker" data-tilt=""/>
+        </div>
+        </div>
+      </div>
+      <div class="section">
+        <!-- Add classes where necessary and style the section appropriately -->
+        <div id="productPage" class="content">
+          <header class="page-header-container">
+            <div>
+              <h2 class="page-heading">Premium</h2>
+              <h3 class="page-subtitle">Shoe Collection</h3>
+            </div>
+          </header>
+          <!-- Product slider, please add your own classes as well to the HTML -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!-- Product Item -->
+            <center>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/nike 1.webp" width="800" height="400"  alt=""> 
+              </div>
+              <div class="carousel-item">
+                <img src="/nike3.png" d-block w-100" width="400" height="400" alt="" srcset=""> 
+          
+              </div>
+              <div class="carousel-item">
+              <img src="./nike4.webp" d-block w-100" width="400" height="400" alt="" srcset=""> 
+          
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      
+        </center>
+          <!-- Page header -->
+          <header class="page-header-container">
+            <h2 class="page-heading">Best In Business</h2>
+            <h3 class="page-subtitle">Happy Customers</h3>
+          </header>
+          <div id="testimonial-slider" class="owl-carousel">
+            <!-- The content for the testimonials has been created using JavaScript. 
+                Please go to the inspect tool to see which classes were used to build the slider, 
+                and use the classnames given to style them in your CSS sheet -->
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div id="contactPage" class="content">
+          <!-- Page header -->
+          <header class="page-header-container">
+            <h2 class="page-heading">Questions?</h2>
+            <h3 class="page-subtitle">Let's get in touch</h3>
+          </header>
+          <!-- Contact Details -->
+          <div class="contact-details-container">
+            <h4 class="contact-details-heading">Warehouse Location</h4>
+            <p class="contact-details-description">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered .
+            </p>
+            <!-- Please insert location, contact numbers and email elements here -->
+          </div>
+          <!-- Create new form on FORMSPREE and insert ULR in the ACTION ATTRIBUTE -->
+          <form id="contact-form">
+            <label for="name"> full name</label>
+            <input
+              class="contact-input"
+              type="text"
+              name="full_name"
+              id="full_name"
+              placeholder="Name"
+              required
+            />
+            <label for="contact_no">Contact Number </label>
+            <input
+              class="contact-input"
+              type="tel"
+              name="contact_no"
+              id="contact_no"
+              placeholder="Contact No"
+              required
+            />
+            <label for="email"> Email</label>
+            <input
+              class="contact-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <label for="message"> Message</label>
+            <textarea
+              class="contact-input"
+              name="message"
+              id="message"
+              placeholder="Type your message here"
+            ></textarea>
+            <button class="button" type="submit">Submit Information</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
